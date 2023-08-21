@@ -274,12 +274,6 @@ input:focus {
   font-weight: 600;
 }
 
-.description-price {
-  font-size: 2rem;
-  line-height: 30px;
-  font-weight: 600;
-}
-
 .right-row-icon {
   margin-left: 4rem;
   width: 2rem;
@@ -339,6 +333,25 @@ input:focus {
   background-color: #f4f5f7;
   transition: all 0.4s;
 }
+.product__item.sales::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 2.5rem;
+  right: 2.5rem;
+
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  content: "-30%";
+
+  background-color: #e97171;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
 .product__item-image {
   width: 100%;
   transition: all 2s;
@@ -350,8 +363,20 @@ input:focus {
 }
 .product__item-text {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 .product__item .sub-text {
   font-size: 1.6rem;
 }
-.product__item-
+.product__item-price {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+.canceled-price.sub-text {
+  font-size: 1.6rem;
+  align-self: flex-end;
+  color: #b0b0b0;
+  text-decoration: line-through;
+}

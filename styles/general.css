@@ -37,3 +37,8 @@ body {
   height: 2rem;
   transform: translate(0rem, 0.4rem);
 }
+.description-price {
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 600;
+}
