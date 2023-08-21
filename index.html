@@ -12,49 +12,50 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script type="module" src="scripts/lazy-load.js"></script>
+    <script type="module" src="scripts/script.js"></script>
   </head>
   <body>
     <div class="top-side">
       <div class="colored-container"></div>
       <header class="header">
+        <!--###############NAVIGATION PANEL###############-->
         <nav class="main-nav">
           <ul class="main-nav-list">
+            <!--###############LOGO###############-->
             <li>
-              <span class="logo-text">
-                <span>Funiro.</span>
-              </span>
+              <span class="logo-text"> Funiro. </span>
             </li>
             <li>
-              <a class="main-nav-link" href="#">
+              <!--###############PRODUCTS BUTTON###############-->
+              <a class="main-nav-link nav-link" href="#products__section">
                 Products
-                <ion-icon class="products-icon" name="chevron-down-outline">
+                <ion-icon class="chevron-icon-down" name="chevron-down-outline">
                 </ion-icon>
               </a>
-              <ion-icon class="products-icon hide" name="chevron-up-outline" />
             </li>
             <li>
-              <a class="main-nav-link" href="#">
+              <a class="main-nav-link rooms-link" href="#">
                 Rooms
-                <ion-icon class="rooms-icon" name="chevron-down-outline">
-                </ion-icon>
-                <ion-icon class="rooms-icon hide" name="chevron-up-outline">
+                <ion-icon class="chevron-icon-down" name="chevron-down-outline">
                 </ion-icon>
               </a>
             </li>
             <li><a class="main-nav-link" href="#">Inspirations</a></li>
-            <div class="search--container">
-              <img
-                src="assets/img/icons/search.png"
-                alt="Search icon"
-                class="search--icon"
-              />
-              <input
-                type="text"
-                class="search--input"
-                placeholder="Search for minimalist chair"
-                name="search"
-              />
-            </div>
+            <li>
+              <div class="search__container">
+                <img
+                  src="assets/img/icons/search.png"
+                  alt="Search icon"
+                  class="search--icon"
+                />
+                <input
+                  type="text"
+                  class="search--input"
+                  placeholder="Search for minimalist chair"
+                  name="search"
+                />
+              </div>
+            </li>
             <li>
               <a class="main-nav-link cart-link" href="#">
                 <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
@@ -78,19 +79,19 @@
         </button>
       </header>
 
-      <div class="hero-section lazy-hide">
-        <div class="hero-indicator-container">
-          <div class="hero-indicator active"></div>
-          <div class="hero-indicator"></div>
-          <div class="hero-indicator"></div>
-          <div class="hero-indicator"></div>
+      <div class="hero__section lazy-hide">
+        <div class="hero__indicator-container">
+          <div class="hero__indicator active"></div>
+          <div class="hero__indicator"></div>
+          <div class="hero__indicator"></div>
+          <div class="hero__indicator"></div>
         </div>
-        <div class="hero-container">
-          <div class="hero-text-container">
-            <h1 class="hero-description">
+        <div class="hero__container">
+          <div class="hero__text-container">
+            <h1 class="hero__description">
               High-Quality Furniture Just For You
             </h1>
-            <div class="hero-sub-description">
+            <div class="hero__sub-description">
               <span class="sub-text"
                 >Our furniture is made from selected and best quality materials
                 that are suitable for your dream home</span
@@ -100,8 +101,8 @@
           </div>
         </div>
 
-        <div class="hero-photo-section">
-          <div class="hero-photo-desctription">
+        <div class="hero__photo-section">
+          <div class="hero__photo-desctription">
             <div class="photo-desctription-container hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
@@ -118,7 +119,7 @@
               class="photo"
             />
           </div>
-          <div class="hero-photo-desctription">
+          <div class="hero__photo-desctription">
             <div class="photo-desctription-container hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
@@ -136,7 +137,7 @@
             />
           </div>
 
-          <div class="hero-photo-desctription">
+          <div class="hero__photo-desctription">
             <div class="photo-desctription-container">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
@@ -153,7 +154,7 @@
               class="photo"
             />
           </div>
-          <div class="hero-photo-desctription">
+          <div class="hero__photo-desctription">
             <div class="photo-desctription-container hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
@@ -221,28 +222,27 @@
         </span>
       </div>
     </div>
-    <div class="products-section">
-      <h2 class="product-section-header">Our Products</h2>
-      <div class="products-container lazy-hide">
-        <div class="product-item lazy-hide">
-          <!--src="assets/img/products/img1.png" -->
+    <div class="products__section">
+      <h2 class="products__section-header">Our Products</h2>
+      <div class="products__container lazy-hide">
+        <div class="product__item lazy-hide">
           <img
             data-lazy="assets/img/products/img1.png"
             alt="Photo of Syltherine"
-            class="product-item-image lazy-image"
+            class="product__item-image lazy-image"
           />
-          <div class="product-item-text">
-            <h4 class="product-item-name">Syltherine</h4>
+          <div class="product__item-text">
+            <h4 class="product__item-name">Syltherine</h4>
             <span class="sub-text">Stylish cafe chair</span>
           </div>
         </div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
-        <div class="product-item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide"></div>
+        <div class="product__item lazy-hide" id="products__section"></div>
       </div>
     </div>
   </body>

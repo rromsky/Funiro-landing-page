@@ -1,3 +1,5 @@
+`use strict`;
+
 const targets = document.querySelectorAll(".lazy-hide");
 
 const lazyLoad = (target) => {

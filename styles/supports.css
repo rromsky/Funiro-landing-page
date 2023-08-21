@@ -1,5 +1,5 @@
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .hero-container,
+  .hero__container,
   .photo-desctription-container:hover {
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);

@@ -69,7 +69,7 @@
 
 /*******SEARCH BAR*********/
 
-.search--container {
+.search__container {
   position: relative;
   width: 47rem;
   height: 4.5rem;
@@ -95,12 +95,6 @@ input:focus {
 
 /*******ICON BAR*********/
 
-.products-icon,
-.rooms-icon {
-  width: 2rem;
-  height: 2rem;
-  transform: translate(0rem, 0.4rem);
-}
 .cart-icon {
   width: 2.4rem;
   height: 2.4rem;
@@ -141,13 +135,13 @@ input:focus {
 }
 
 /*******HERO SECTION*********/
-.hero-section {
+.hero__section {
   position: relative;
   z-index: 2;
   transition: all 0.4s;
 }
 
-.hero-container {
+.hero__container {
   z-index: 2;
   position: absolute;
   left: 22rem;
@@ -160,7 +154,7 @@ input:focus {
 
 /*******HERO INDICATOR*********/
 
-.hero-indicator-container {
+.hero__indicator-container {
   padding-bottom: 1rem;
   height: 5rem;
   display: flex;
@@ -169,24 +163,24 @@ input:focus {
   gap: 1rem;
   flex-direction: row;
 }
-.hero-indicator {
+.hero__indicator {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
 
   background-color: #d8d8d8;
 }
-.hero-indicator::after {
+.hero__indicator::after {
   width: 1.4rem;
   height: 1.4rem;
 }
-.hero-indicator.active {
+.hero__indicator.active {
   background-color: #e89f71;
 }
 
 /*******HERO TEXT BOX*********/
 
-.hero-text-container {
+.hero__text-container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -194,13 +188,13 @@ input:focus {
   padding-left: 5rem;
   padding-right: 2rem;
 }
-.hero-description {
+.hero__description {
   font-size: 5.6em;
   text-shadow: #a5a3a3 -2px 2px;
 
   padding: 5rem 5rem 1rem 0;
 }
-.hero-sub-description {
+.hero__sub-description {
   max-width: 35rem;
 }
 
@@ -242,7 +236,7 @@ input:focus {
 
 /*******HERO BACKGROUND PHOTOS*********/
 
-.hero-photo-section {
+.hero__photo-section {
   display: flex;
   position: relative;
   width: 164rem;
@@ -272,7 +266,7 @@ input:focus {
 .photo-desctription-container:hover {
   cursor: pointer;
 }
-.hero-photo-desctription {
+.hero__photo-desctription {
   position: relative;
 }
 .description-title {
@@ -319,19 +313,20 @@ input:focus {
 }
 
 /*******PRODUCTS SECTION*********/
-.products-section {
+.products__section {
+  behavior: "smooth";
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
   margin-top: 8rem;
 }
-.product-section-header {
+.products__section-header {
   color: #3a3a3a;
   font-size: 4rem;
   font-weight: 700;
 }
-.products-container {
+.products__container {
   display: grid;
   max-width: 130rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -339,20 +334,24 @@ input:focus {
   transition: all 0.4s;
 }
 
-.product-item {
+.product__item {
   position: relative;
   background-color: #f4f5f7;
   transition: all 0.4s;
 }
-.product-item-image {
+.product__item-image {
   width: 100%;
   transition: all 2s;
 }
-.product-item-name {
+.product__item-name {
   font-size: 2.4rem;
   font-weight: 600;
   color: #3a3a3a;
 }
-.product-item .sub-text {
+.product__item-text {
+  padding: 1.5rem;
+}
+.product__item .sub-text {
   font-size: 1.6rem;
 }
+.product__item-
