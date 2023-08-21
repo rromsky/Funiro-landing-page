@@ -333,6 +333,7 @@ input:focus {
   background-color: #f4f5f7;
   transition: all 0.4s;
 }
+
 .product__item.sales::before {
   position: absolute;
   display: flex;
@@ -351,11 +352,14 @@ input:focus {
   width: 4.2rem;
   height: 4.2rem;
   border-radius: 50%;
+  transition: all 0s;
 }
+
 .product__item-image {
   width: 100%;
   transition: all 2s;
 }
+
 .product__item-name {
   font-size: 2.4rem;
   font-weight: 600;
@@ -369,6 +373,7 @@ input:focus {
 .product__item .sub-text {
   font-size: 1.6rem;
 }
+
 .product__item-price {
   display: flex;
   justify-content: space-between;
@@ -379,4 +384,64 @@ input:focus {
   align-self: flex-end;
   color: #b0b0b0;
   text-decoration: line-through;
+}
+
+.product__item-hovered {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  background-color: rgba(58, 58, 58, 0.72);
+  transition: all 0.5s;
+}
+.product__item:hover > .product__item-hovered {
+  left: 0;
+  right: 0;
+  display: flex !important;
+  background-color: rgba(99, 99, 99, 0.72);
+}
+.product_item-button--cart.btn {
+  margin-top: 1rem;
+  background-color: #fff;
+  color: #e89f71;
+  padding: 1.8rem;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 20rem;
+  height: 5rem;
+}
+.product_item-button--cart.btn:hover {
+  background-color: rgba(250, 234, 205, 0.9);
+}
+.product_item-button-section {
+  display: flex;
+  gap: 3rem;
+}
+.product_item-button--like,
+.product_item-button--share {
+  display: flex;
+  align-items: center;
+  height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff !important;
+}
+.product_item-button-icon {
+  display: inline-block;
+  font-size: 2.4rem;
+  transition: all 0.4s;
+}
+.product_item-button--like:hover > .product_item-button-icon,
+.product_item-button--share:hover > .product_item-button-icon {
+  color: rgba(221, 142, 92, 0.8);
+}
+.product_item-button--like:hover > span,
+.product_item-button--share:hover > span {
+  transition: all 0.4s;
+  color: rgba(250, 234, 205, 0.9);
 }

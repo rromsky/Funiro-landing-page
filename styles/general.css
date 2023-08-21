@@ -17,6 +17,13 @@ body {
   color: #3a3a3a;
   background-color: #fff;
 }
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
 .sub-text {
   color: #898989;
   font-size: 2rem;

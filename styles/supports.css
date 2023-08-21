@@ -1,6 +1,7 @@
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .hero__container,
-  .photo-desctription-container:hover {
+  .photo-desctription-container:hover,
+  .product__item:hover::before {
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
   }
