@@ -1,0 +1,12 @@
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .hero-container,
+  .photo-desctription-container:hover {
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+  }
+  .cart-number,
+  .photo-desctription-container {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}

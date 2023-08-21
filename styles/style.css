@@ -1,0 +1,358 @@
+/**************************/
+/******* TOP SIDE *********/
+/**************************/
+
+/*******HEADER*********/
+.top-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fcf8f3;
+  z-index: 0;
+  transition: all 0.4s;
+}
+.colored-container {
+  position: absolute;
+  left: 0;
+  width: 124rem;
+  height: 100%;
+  z-index: 1;
+  background-color: #f9f1e7;
+}
+.header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  transition: all 0.5s;
+}
+
+/*******TEXT LOGO*********/
+
+.logo-text {
+  font-size: 2.4rem !important;
+  font-weight: bold;
+  text-decoration: 0;
+  color: #000;
+}
+
+/**************************/
+/*******NAVIGATION*********/
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e89f71;
+}
+
+/*******SEARCH BAR*********/
+
+.search--container {
+  position: relative;
+  width: 47rem;
+  height: 4.5rem;
+}
+.search--input {
+  padding-left: 3.5rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: all 0.4s;
+}
+.search--icon {
+  max-width: 2rem;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border: rgba(232, 159, 113, 0.2) solid 1px;
+}
+
+/*******ICON BAR*********/
+
+.products-icon,
+.rooms-icon {
+  width: 2rem;
+  height: 2rem;
+  transform: translate(0rem, 0.4rem);
+}
+.cart-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.cart-link {
+  position: relative;
+}
+.cart-number {
+  position: absolute;
+  color: #3a3a3a;
+  left: 1.6rem;
+  top: -0.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: rgba(255, 185, 142, 0.5);
+}
+.personal-photo {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+/*******Mobile nav*********/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  max-height: 4.8rem;
+  max-width: 4.8rem;
+  color: #333;
+}
+
+/*******HERO SECTION*********/
+.hero-section {
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s;
+}
+
+.hero-container {
+  z-index: 2;
+  position: absolute;
+  left: 22rem;
+  top: -1rem;
+  max-width: 53rem;
+  max-height: 50rem;
+  padding-bottom: 6rem;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+/*******HERO INDICATOR*********/
+
+.hero-indicator-container {
+  padding-bottom: 1rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+.hero-indicator {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+
+  background-color: #d8d8d8;
+}
+.hero-indicator::after {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.hero-indicator.active {
+  background-color: #e89f71;
+}
+
+/*******HERO TEXT BOX*********/
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-width: 51rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+.hero-description {
+  font-size: 5.6em;
+  text-shadow: #a5a3a3 -2px 2px;
+
+  padding: 5rem 5rem 1rem 0;
+}
+.hero-sub-description {
+  max-width: 35rem;
+}
+
+/*******BUTTON [SHOP NOW]*********/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-align: center;
+  justify-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2.8rem 3.2rem;
+  border-radius: 9px;
+  max-width: 37rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e89f71;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #dd8e5c;
+}
+.btn--full:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+/*******HERO BACKGROUND PHOTOS*********/
+
+.hero-photo-section {
+  display: flex;
+  position: relative;
+  width: 164rem;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 3.2rem;
+
+  transition: all 0.6s;
+}
+.photo {
+  width: 90rem;
+  height: 60rem;
+}
+
+/*******PHOTO DESCTRIPTION BOX*********/
+.photo-desctription-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.72);
+  right: 10rem;
+  bottom: 10rem;
+  padding: 3.2rem;
+  transition: all 0.3s;
+}
+.photo-desctription-container:hover {
+  cursor: pointer;
+}
+.hero-photo-desctription {
+  position: relative;
+}
+.description-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.description-price {
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.right-row-icon {
+  margin-left: 4rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+/*******opportunities section*********/
+
+.opportunities {
+  display: flex;
+  gap: 4rem;
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s;
+}
+.opportunities-item {
+  display: flex;
+  gap: 3rem;
+}
+.opportunities-item-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.opportunities-item-heading {
+  color: #3a3a3a;
+  font-size: 1.8rem;
+}
+.opportunities-item .sub-text {
+  font-size: 1.6rem;
+}
+
+/*******PRODUCTS SECTION*********/
+.products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 8rem;
+}
+.product-section-header {
+  color: #3a3a3a;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.products-container {
+  display: grid;
+  max-width: 130rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  transition: all 0.4s;
+}
+
+.product-item {
+  position: relative;
+  background-color: #f4f5f7;
+  transition: all 0.4s;
+}
+.product-item-image {
+  width: 100%;
+  transition: all 2s;
+}
+.product-item-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.product-item .sub-text {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #3a3a3a;
+  background-color: #fff;
+}
+.sub-text {
+  color: #898989;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.hide {
+  display: none !important;
+}
+.lazy-hide {
+  opacity: 0;
+  transform: translateX(45rem);
+}
+.lazy-image {
+  opacity: 0;
+}
