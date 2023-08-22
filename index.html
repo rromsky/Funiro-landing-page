@@ -42,7 +42,16 @@
                 </ion-icon>
               </a>
             </li>
-            <li><a class="main-nav-link nav-link" href="#">Inspirations</a></li>
+            <li>
+              <a class="main-nav-link nav-link" href="#">
+                Inspirations
+                <ion-icon
+                  class="chevron-icon-down hide"
+                  name="chevron-down-outline"
+                >
+                </ion-icon>
+              </a>
+            </li>
             <li>
               <div class="search__container">
                 <img
@@ -65,7 +74,7 @@
               </a>
             </li>
             <li>
-              <a class="main-nav-link" href="#">
+              <a class="main-nav-link account-link" href="#">
                 <img
                   src="assets/img/icons/personal-photo.png"
                   alt="Personal photo"
@@ -78,7 +87,7 @@
         <button class="btn-mobile-nav mobile-nav--open">
           <ion-icon class="icon-mobile-nav" name="menu-outline" />
         </button>
-        <button class="btn-mobile-nav mobile-nav--close">
+        <button class="btn-mobile-nav mobile-nav--close ab-hide">
           <ion-icon class="icon-mobile-nav hide" name="close-outline" />
         </button>
       </header>
@@ -86,38 +95,21 @@
       <div class="hero__section lazy-hide">
         <!-- HERO INDICATORS -->
         <div class="hero__indicator indicator-container">
-          <div class="hero__indicator indicator-item active"></div>
-          <div class="hero__indicator indicator-item"></div>
-          <div class="hero__indicator indicator-item"></div>
-          <div class="hero__indicator indicator-item"></div>
           <button class="hero-btn slider__btn slider__btn--left">
             <ion-icon name="chevron-back-outline"></ion-icon>
           </button>
+          <div class="hero__indicator indicator-item active id1"></div>
+          <div class="hero__indicator indicator-item id2"></div>
+          <div class="hero__indicator indicator-item id3"></div>
+          <div class="hero__indicator indicator-item id4"></div>
           <button class="hero-btn tips-btn slider__btn slider__btn--right">
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </button>
         </div>
-        <div class="hero__container">
-          <!-- HERO DESCRIPTION -->
-          <div class="hero__text-container">
-            <h1 class="hero__description">
-              High-Quality Furniture Just For You
-            </h1>
-            <div class="hero__sub-description">
-              <span class="sub-text"
-                >Our furniture is made from selected and best quality materials
-                that are suitable for your dream home</span
-              >
-            </div>
-            <!-- HERO BUTTON -->
-            <a href="#" class="btn btn--full">Shop now</a>
-          </div>
-        </div>
-
         <!-- HERO SLIDER ITEM -->
         <div class="hero__photo-section">
           <div class="hero__photo-desctription">
-            <div class="photo-desctription-container hide">
+            <div class="photo-desctription-container id0 hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
               <br />
@@ -135,7 +127,7 @@
           </div>
           <!-- HERO SLIDER ITEM -->
           <div class="hero__photo-desctription">
-            <div class="photo-desctription-container hide">
+            <div class="photo-desctription-container id1">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
               <br />
@@ -153,7 +145,7 @@
           </div>
           <!-- HERO SLIDER ITEM -->
           <div class="hero__photo-desctription">
-            <div class="photo-desctription-container">
+            <div class="photo-desctription-container id2 hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
               <br />
@@ -170,7 +162,7 @@
             />
           </div>
           <div class="hero__photo-desctription">
-            <div class="photo-desctription-container hide">
+            <div class="photo-desctription-container id3 hide">
               <h2 class="description-title">Bohanus</h2>
               <span class="sub-text">Luxury big sofa 2-seat</span>
               <br />
@@ -185,6 +177,22 @@
               alt="photo of other sofa"
               class="photo"
             />
+          </div>
+        </div>
+        <div class="hero__container">
+          <!-- HERO DESCRIPTION -->
+          <div class="hero__text-container">
+            <h1 class="hero__description">
+              High-Quality Furniture Just For You
+            </h1>
+            <div class="hero__sub-description">
+              <span class="sub-text"
+                >Our furniture is made from selected and best quality materials
+                that are suitable for your dream home</span
+              >
+            </div>
+            <!-- HERO BUTTON -->
+            <a href="#" class="btn btn--full">Shop now</a>
           </div>
         </div>
       </div>

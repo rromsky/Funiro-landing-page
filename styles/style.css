@@ -258,7 +258,13 @@ input:focus {
   cursor: pointer;
 }
 .hero__photo-desctription {
+  transition: all 0.4s;
+  transform: translateX(-20%);
   position: relative;
+}
+.hero__normalize {
+  opacity: 0;
+  content: "-20";
 }
 .description-title {
   font-size: 2.8rem;
