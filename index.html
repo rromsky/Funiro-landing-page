@@ -15,6 +15,7 @@
     <script type="module" src="scripts/script.js"></script>
   </head>
   <body>
+    <!-- TOP[HEADER] SECTION -->
     <div class="top-side">
       <div class="colored-container"></div>
       <header class="header">
@@ -78,15 +79,23 @@
           <ion-icon class="icon-mobile-nav hide" name="close-outline" />
         </button>
       </header>
-
+      <!-- HERO SECTION -->
       <div class="hero__section lazy-hide">
+        <!-- HERO INDICATORS -->
         <div class="hero__indicator indicator-container">
           <div class="hero__indicator indicator-item active"></div>
           <div class="hero__indicator indicator-item"></div>
           <div class="hero__indicator indicator-item"></div>
           <div class="hero__indicator indicator-item"></div>
+          <button class="hero-btn slider__btn slider__btn--left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="hero-btn tips-btn slider__btn slider__btn--right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
         </div>
         <div class="hero__container">
+          <!-- HERO DESCRIPTION -->
           <div class="hero__text-container">
             <h1 class="hero__description">
               High-Quality Furniture Just For You
@@ -97,10 +106,12 @@
                 that are suitable for your dream home</span
               >
             </div>
+            <!-- HERO BUTTON -->
             <a href="#" class="btn btn--full">Shop now</a>
           </div>
         </div>
 
+        <!-- HERO SLIDER ITEM -->
         <div class="hero__photo-section">
           <div class="hero__photo-desctription">
             <div class="photo-desctription-container hide">
@@ -119,6 +130,7 @@
               class="photo"
             />
           </div>
+          <!-- HERO SLIDER ITEM -->
           <div class="hero__photo-desctription">
             <div class="photo-desctription-container hide">
               <h2 class="description-title">Bohanus</h2>
@@ -136,7 +148,7 @@
               class="photo"
             />
           </div>
-
+          <!-- HERO SLIDER ITEM -->
           <div class="hero__photo-desctription">
             <div class="photo-desctription-container">
               <h2 class="description-title">Bohanus</h2>
@@ -538,20 +550,27 @@
         >Watch more...</a
       >
     </div>
+    <!-- ROOMS SECTION -->
     <div class="rooms__section" id="rooms__section">
       <div class="rooms__section-description" lazy-hide>
         <div class="rooms__section-description--text">
+          <!-- ROOMS HEADER-->
           <h2 class="rooms__section-header">50+ Beautiful rooms inspiration</h2>
           <span class="sub-text">
             Our designer already made a lot of beautiful prototipe of rooms that
             inspire you
           </span>
         </div>
+        <!-- ROOMS BUTTON-->
         <a href="#" class="rooms__section-description--button btn btn--full">
           Explore More
         </a>
       </div>
       <div class="rooms_photo-section lazy-hide">
+        <button class="rooms-btn slider__btn slider__btn--right">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+        <!-- ROOMS PHOTO ELEMENT 1-->
         <div class="photo__section-element item--id-1 item1">
           <img
             data-lazy="assets/img/rooms/img1.png"
@@ -565,7 +584,7 @@
             <h2 class="description-title">Inner Peace</h2>
           </div>
         </div>
-
+        <!-- ROOMS PHOTO ELEMENT 2-->
         <div class="photo__section-element item--id-2 item2">
           <img
             data-lazy="assets/img/rooms/img2.png"
@@ -579,6 +598,7 @@
             <h2 class="description-title">Inner Peace</h2>
           </div>
         </div>
+        <!-- ROOMS PHOTO ELEMENT 3-->
         <div class="photo__section-element item--id-3 item3">
           <img
             data-lazy="assets/img/rooms/img3.png"
@@ -592,6 +612,7 @@
             <h2 class="description-title">Inner Peace</h2>
           </div>
         </div>
+        <!-- ROOMS INDICATOR  -->
         <div class="rooms__indicator indicator-container">
           <div class="rooms__indicator indicator-item active"></div>
           <div class="rooms__indicator indicator-item"></div>
@@ -600,14 +621,19 @@
         </div>
       </div>
     </div>
+    <!-- TIPS SECTION -->
     <div class="tips__section">
+      <!-- TIPS HEADER -->
       <h2 class="tips__section-header">Tpis & Tricks</h2>
       <div class="tips__container">
-        <button class="slider__btn slider__btn--left">
+        <!-- TIPS SLIDER BUTTON LEFT -->
+        <button class="tips-btn slider__btn slider__btn--left">
           <ion-icon name="chevron-back-outline"></ion-icon>
         </button>
+        <!-- TIPS SLIDER -->
         <div class="slider__container lazy-hide">
           <div class="slider">
+            <!-- TIPS SLIDE 1 -->
             <div class="slide">
               <div class="testimonial">
                 <img
@@ -623,6 +649,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- TIPS SLIDE 2 -->
             <div class="slide active" style="transform: translateX(105%)">
               <div class="testimonial">
                 <img
@@ -638,6 +666,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- TIPS SLIDE 3 -->
             <div class="slide" style="transform: translateX(210%)">
               <div class="testimonial">
                 <img
@@ -653,6 +683,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- TIPS SLIDE 4 -->
             <div class="slide" style="transform: translateX(315%)">
               <div class="testimonial">
                 <img
@@ -668,7 +700,8 @@
             </div>
           </div>
         </div>
-        <button class="slider__btn slider__btn--right">
+        <!-- TIPS SLIDER BUTTON RIGHT -->
+        <button class="tips-btn slider__btn slider__btn--right">
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </button>
       </div>
@@ -679,5 +712,123 @@
         <div class="tips__indicator indicator-item"></div>
       </div>
     </div>
+
+    <!-- FURNITURE SECTION -->
+    <div class="furniture__section">
+      <span class="furniture__section-describe sub-text">
+        Share your setup with
+      </span>
+      <h2 class="furniture__section-header">#FuniroFurniture</h2>
+      <div class="furniture__section-photo-container lazy-hide">
+        <div
+          data-lazy="/assets/img/furnitures/img1.png"
+          class="furniture__section-photo-container--item furniture_item1 lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img2.png"
+          class="furniture__section-photo-container--item furniture_item2 lazy-container"
+        ></div>
+        <div class="emty"></div>
+        <div
+          data-lazy="/assets/img/furnitures/img3.png"
+          class="furniture__section-photo-container--item furniture_item3 item--moved lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img4.png"
+          class="furniture__section-photo-container--item furniture_item4 item--moved lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img5.png"
+          class="furniture__section-photo-container--item furniture_item5 lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img6.png"
+          class="furniture__section-photo-container--item furniture_item6 lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img7.png"
+          class="furniture__section-photo-container--item furniture_item7 lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img8.png"
+          class="furniture__section-photo-container--item furniture_item8 item--moved lazy-container"
+        ></div>
+        <div
+          data-lazy="/assets/img/furnitures/img9.png"
+          class="furniture__section-photo-container--item furniture_item9 item--moved lazy-container"
+        ></div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="emty"></div>
+        <div class="address-col">
+          <p class="footer-heading">Funiro.</p>
+          <address class="contacts">
+            <p class="address">
+              Worldwide furniture store since 2020. We sell over 1000+ branded
+              products on our website
+            </p>
+            <p>
+              <a href="#" class="footer-link">
+                <ion-icon name="location-outline"></ion-icon>
+                Sawojajar Malang, Indonesia
+              </a>
+              <a class="footer-link" href="tel:6289 456 34550">+6289 456 3455</a
+              ><br />
+              <a class="footer-link" href="www.funiro.com">www.funiro.com</a>
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Stay updated</p>
+          <ul class="footer-nav">
+            <li>
+              <div class="relative-container">
+                <button class="footer__input-button--submit">
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+              </div>
+              <input
+                type="text"
+                class="search--input footer-input"
+                placeholder="Enter your email"
+                name="search"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

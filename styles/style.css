@@ -206,6 +206,24 @@ input:focus {
 
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
+/*******HERO INDICATOR BUTTONS*********/
+.hero-btn.slider__btn--right {
+  position: absolute;
+  right: 14rem;
+  background-color: #e89f71;
+  box-shadow: none;
+  color: #fff;
+}
+.hero-btn.slider__btn--right:hover {
+  color: #595959;
+}
+.hero-btn.slider__btn--left {
+  position: absolute;
+  right: 19rem;
+  box-shadow: none;
+  color: #e89f71;
+  background-color: rgb(232, 159, 113, 0.3);
+}
 
 /*******HERO BACKGROUND PHOTOS*********/
 
@@ -293,7 +311,8 @@ input:focus {
 }
 .products__section-header,
 .rooms__section-header,
-.tips__section-header {
+.tips__section-header,
+.furniture__section-header {
   color: #3a3a3a;
   font-size: 4rem;
   font-weight: 700;
@@ -365,7 +384,7 @@ input:focus {
 .product__item:hover > .product__item-hovered {
   left: 0;
   right: 0;
-  display: flex !important;
+  opacity: 1 !important;
   background-color: rgba(99, 99, 99, 0.72);
 }
 .product_item-button--cart.btn {
@@ -475,6 +494,7 @@ input:focus {
   margin-left: 10rem;
   padding-top: 18rem;
   max-width: 40rem;
+  transition: all 0.4s;
 }
 
 .rooms__section-header {
@@ -499,14 +519,21 @@ input:focus {
   align-items: center;
   transition: all 0.4s;
 }
+.rooms-btn {
+  position: absolute;
+  right: 14rem;
+  color: #e89f71;
+}
 .photo__section-element {
   position: absolute;
   height: 59rem;
   width: 40rem;
   left: 10rem;
   top: 4rem;
+  transition: all 0.4s;
 }
 .photo__section-element--item {
+  transition: all 0.4s;
   height: 59rem;
   width: 40rem;
 }
@@ -529,10 +556,11 @@ input:focus {
   transform: translate(-10rem, 24rem);
 }
 .photo-desctription-container.rooms {
-  display: none;
+  cursor: default;
+  opacity: 0;
 }
 .item1 .photo-desctription-container.rooms {
-  display: block;
+  opacity: 1;
 }
 .item1 .photo-desctription-container.rooms::after {
   position: absolute;
@@ -561,6 +589,9 @@ input:focus {
 
 .tips__section {
   display: flex;
+  max-width: 120rem;
+  width: 100%;
+  align-self: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -640,4 +671,193 @@ input:focus {
   font-weight: 400;
   align-self: flex-start;
   padding-bottom: 0.4rem;
+}
+
+/**********************************/
+/********FURNITURE SECTION*********/
+/**********************************/
+.furniture__section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding: 3.4rem 0;
+}
+.furniture__section-describe.sub-text {
+  color: #616161;
+}
+.furniture__section-photo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.6rem;
+  max-width: 100%;
+  transition: all 0.4s;
+}
+.furniture__section-photo-container--item {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.furniture_item1 {
+  /* background-image: url("/assets/img/furnitures/img1.png"); */
+  height: 38rem;
+  width: 28rem;
+}
+.furniture_item2 {
+  /* background-image: url("/assets/img/furnitures/img2.png"); */
+  height: 31rem;
+  width: 45rem;
+  margin-left: -10rem;
+  align-self: flex-end;
+}
+.furniture_item3 {
+  /* background-image: url("/assets/img/furnitures/img3.png"); */
+  height: 31rem;
+  width: 45rem;
+  align-self: flex-end;
+}
+.furniture_item4 {
+  /* background-image: url("/assets/img/furnitures/img4.png"); */
+  height: 43rem;
+  width: 43rem;
+  padding-left: 1rem;
+  border: 1rem solid #fff;
+  border-bottom: none;
+  align-self: flex-end;
+}
+.furniture_item5 {
+  /* background-image: url("/assets/img/furnitures/img5.png"); */
+  height: 42rem;
+  width: 38rem;
+}
+.furniture_item6 {
+  /* background-image: url("/assets/img/furnitures/img6.png"); */
+  height: 24rem;
+
+  width: 35rem;
+}
+.furniture_item7 {
+  /* background-image: url("/assets/img/furnitures/img7.png"); */
+  height: 40rem;
+  width: 30rem;
+  margin-top: -20rem;
+  margin-left: -3rem;
+}
+.furniture_item8 {
+  /* background-image: url("/assets/img/furnitures/img8.png"); */
+  height: 24rem;
+  width: 18rem;
+  align-self: flex-start;
+  margin-top: 7.8rem;
+}
+.furniture_item9 {
+  /* background-image: url("/assets/img/furnitures/img9.png"); */
+  height: 20rem;
+  width: 26rem;
+  margin-top: 7.8rem;
+  margin-left: -31rem !important;
+}
+.item--moved {
+  margin-bottom: -8rem;
+  margin-left: -11rem;
+}
+
+/******************************/
+/********   FOOTER    *********/
+/******************************/
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.footer {
+  width: 90%;
+  margin-top: 6rem;
+  padding: 4.8rem 2rem;
+  border-top: 1px solid #eee;
+  align-self: center;
+  align-items: center;
+}
+
+.grid--footer {
+  grid-template-columns: 1fr 2.5fr 1.1fr 1fr 1.8fr 3fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.footer-input {
+  background-color: #f4f5f7;
+  width: 24rem;
+  height: 5rem;
+}
+.relative-container {
+  position: relative;
+  display: block;
+  width: 24rem;
+}
+.footer__input-button--submit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -5rem;
+  background-color: #dd8e5c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 2.2rem;
+  width: 5rem;
+  height: 5rem;
 }
