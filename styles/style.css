@@ -17,7 +17,7 @@
 .colored-container {
   position: absolute;
   left: 0;
-  width: 124rem;
+  width: 67vw;
   height: 100%;
   z-index: 1;
   background-color: #f9f1e7;
@@ -682,6 +682,7 @@ input:focus {
   align-self: center;
   align-items: center;
   padding: 3.4rem 0;
+  width: 100%;
 }
 .furniture__section-describe.sub-text {
   color: #616161;
@@ -689,8 +690,8 @@ input:focus {
 .furniture__section-photo-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1.6rem;
-  max-width: 100%;
+  grid-gap: 1rem;
+  margin-right: -7.2rem;
   transition: all 0.4s;
 }
 .furniture__section-photo-container--item {
@@ -702,6 +703,7 @@ input:focus {
   /* background-image: url("/assets/img/furnitures/img1.png"); */
   height: 38rem;
   width: 28rem;
+  align-self: flex-end;
 }
 .furniture_item2 {
   /* background-image: url("/assets/img/furnitures/img2.png"); */
@@ -761,7 +763,13 @@ input:focus {
   margin-bottom: -8rem;
   margin-left: -11rem;
 }
-
+.rooms-btn {
+  left: 88rem;
+}
+.rooms__indicator.indicator-container {
+  position: absolute;
+  left: 64.4rem;
+}
 /******************************/
 /********   FOOTER    *********/
 /******************************/

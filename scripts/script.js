@@ -1,8 +1,11 @@
 `use strict`;
 
+const element = (name) => document.querySelector(`${name}`);
+
 const productItems = document.querySelectorAll(".product__item");
 let previousItem;
 
+// Display product items
 productItems.forEach((item) => {
   item.addEventListener("click", () => {
     if (previousItem !== undefined && previousItem !== item) {
@@ -25,3 +28,4 @@ productItems.forEach((item) => {
     item.classList.toggle("product__item-sale--hover");
   });
 });
+console.log(window.innerWidth);

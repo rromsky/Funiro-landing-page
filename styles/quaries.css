@@ -1,0 +1,31 @@
+@media (max-width: 1900px) {
+  .emty {
+    height: 0;
+    width: 0;
+  }
+}
+@media (max-width: 1844px) {
+  .item--moved {
+    margin-bottom: -8rem;
+    margin-left: -5rem;
+  }
+  .furniture__section-photo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-right: -6rem;
+    transition: all 0.4s;
+  }
+  .furniture_item7 {
+    background-image: url(/assets/img/furnitures/img7.png);
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .furniture_item9 {
+    margin-left: -27rem !important;
+  }
+  .emty {
+    display: none;
+  }
+}
