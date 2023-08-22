@@ -791,7 +791,9 @@ input:focus {
   align-self: center;
   align-items: center;
 }
-
+.footer .container {
+  align-self: center;
+}
 .grid--footer {
   grid-template-columns: 1fr 2.5fr 1.1fr 1fr 1.8fr 3fr;
 }

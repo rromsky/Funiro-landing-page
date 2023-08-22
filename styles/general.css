@@ -37,7 +37,14 @@ a:visited {
 }
 .lazy-hide {
   opacity: 0;
-  transform: translateX(45rem);
+  transform: translateX(25rem);
+  transition: 0.5s;
+}
+.lazy-hide.animation-left {
+  transform: translateX(-25rem);
+}
+.ab-hide {
+  display: none !important;
 }
 .lazy-image {
   opacity: 0;

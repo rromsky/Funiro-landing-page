@@ -7,6 +7,7 @@ const lazyLoad = (target) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const t = entry.target;
+        t.classList.add("animation-left");
         t.classList.remove("lazy-hide");
 
         observer.disconnect();
