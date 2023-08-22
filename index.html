@@ -34,7 +34,7 @@
               </a>
             </li>
             <li>
-              <a class="main-nav-link rooms-link" href="#">
+              <a class="main-nav-link rooms-link" href="#rooms__section">
                 Rooms
                 <ion-icon class="chevron-icon-down" name="chevron-down-outline">
                 </ion-icon>
@@ -80,11 +80,11 @@
       </header>
 
       <div class="hero__section lazy-hide">
-        <div class="hero__indicator-container">
-          <div class="hero__indicator active"></div>
-          <div class="hero__indicator"></div>
-          <div class="hero__indicator"></div>
-          <div class="hero__indicator"></div>
+        <div class="hero__indicator indicator-container">
+          <div class="hero__indicator indicator-item active"></div>
+          <div class="hero__indicator indicator-item"></div>
+          <div class="hero__indicator indicator-item"></div>
+          <div class="hero__indicator indicator-item"></div>
         </div>
         <div class="hero__container">
           <div class="hero__text-container">
@@ -222,7 +222,7 @@
         </span>
       </div>
     </div>
-    <div class="products__section">
+    <div class="products__section" id="products__section">
       <h2 class="products__section-header">Our Products</h2>
       <div class="products__container lazy-hide">
         <!--PRODUCTS ITEM 1-->
@@ -381,7 +381,7 @@
           </div>
         </div>
         <!--PRODUCTS ITEM 5-->
-        <div class="product__item lazy-hide" id="products__section">
+        <div class="product__item lazy-hide">
           <div class="product__item-hovered hide">
             <a
               href="#products__section"
@@ -537,6 +537,97 @@
       <a href="#" class="products_section-button--more btn btn--full lazy-hide"
         >Watch more...</a
       >
+    </div>
+    <div class="rooms__section" id="rooms__section">
+      <div class="rooms__section-description" lazy-hide>
+        <div class="rooms__section-description--text">
+          <h2 class="rooms__section-header">50+ Beautiful rooms inspiration</h2>
+          <span class="sub-text">
+            Our designer already made a lot of beautiful prototipe of rooms that
+            inspire you
+          </span>
+        </div>
+        <a href="#" class="rooms__section-description--button btn btn--full">
+          Explore More
+        </a>
+      </div>
+      <div class="rooms_photo-section lazy-hide">
+        <div class="photo__section-element item--id-1 item1">
+          <img
+            data-lazy="assets/img/rooms/img1.png"
+            alt=""
+            class="photo__section-element--item lazy-image"
+          />
+          <div class="photo-desctription-container rooms">
+            <span class="photo-desctription-container--name">
+              01 — Bed Room
+            </span>
+            <h2 class="description-title">Inner Peace</h2>
+          </div>
+        </div>
+
+        <div class="photo__section-element item--id-2 item2">
+          <img
+            data-lazy="assets/img/rooms/img2.png"
+            alt=""
+            class="photo__section-element--item lazy-image"
+          />
+          <div class="photo-desctription-container rooms">
+            <span class="photo-desctription-container--name">
+              02 — Bad Room
+            </span>
+            <h2 class="description-title">Inner Peace</h2>
+          </div>
+        </div>
+        <div class="photo__section-element item--id-3 item3">
+          <img
+            data-lazy="assets/img/rooms/img3.png"
+            alt=""
+            class="photo__section-element--item lazy-image"
+          />
+          <div class="photo-desctription-container rooms">
+            <span class="photo-desctription-container--name">
+              03 — Other Room
+            </span>
+            <h2 class="description-title">Inner Peace</h2>
+          </div>
+        </div>
+        <div class="rooms__indicator indicator-container">
+          <div class="rooms__indicator indicator-item active"></div>
+          <div class="rooms__indicator indicator-item"></div>
+          <div class="rooms__indicator indicator-item"></div>
+          <div class="rooms__indicator indicator-item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tips__section">
+      <h2 class="tips__section-header">Tpis & Tricks</h2>
+      <div class="tips__container">
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <div class="slider__container">
+          <div class="slider">
+            <div class="slide active">
+              <div class="testimonial">
+                <img
+                  src="assets/img/products/img1.png"
+                  alt=""
+                  class="testimonial__image"
+                />
+                <h3 class="testimonial-heading product__item-name">
+                  Solution for clean look working space
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+      <div class="tips__indicator indicator-container">
+        <div class="tips__indicator indicator-item active"></div>
+        <div class="tips__indicator indicator-item"></div>
+        <div class="tips__indicator indicator-item"></div>
+        <div class="tips__indicator indicator-item"></div>
+      </div>
     </div>
   </body>
 </html>

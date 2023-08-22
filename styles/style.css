@@ -152,32 +152,6 @@ input:focus {
   background-color: rgba(255, 255, 255, 0.72);
 }
 
-/*******HERO INDICATOR*********/
-
-.hero__indicator-container {
-  padding-bottom: 1rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-direction: row;
-}
-.hero__indicator {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-
-  background-color: #d8d8d8;
-}
-.hero__indicator::after {
-  width: 1.4rem;
-  height: 1.4rem;
-}
-.hero__indicator.active {
-  background-color: #e89f71;
-}
-
 /*******HERO TEXT BOX*********/
 
 .hero__text-container {
@@ -210,7 +184,6 @@ input:focus {
   font-size: 2rem;
   font-weight: 600;
   padding: 2.8rem 3.2rem;
-  border-radius: 9px;
   max-width: 37rem;
   border: none;
   cursor: pointer;
@@ -306,7 +279,9 @@ input:focus {
   font-size: 1.6rem;
 }
 
+/******************************/
 /*******PRODUCTS SECTION*********/
+/******************************/
 .products__section {
   behavior: "smooth";
   display: flex;
@@ -316,7 +291,9 @@ input:focus {
   margin-top: 8rem;
   margin-bottom: 4.2rem;
 }
-.products__section-header {
+.products__section-header,
+.rooms__section-header,
+.tips__section-header {
   color: #3a3a3a;
   font-size: 4rem;
   font-weight: 700;
@@ -329,10 +306,26 @@ input:focus {
   transition: all 0.4s;
 }
 
+/*******PRODUCTS ITEMS*********/
+
 .product__item {
   position: relative;
   background-color: #f4f5f7;
   transition: all 0.4s;
+}
+
+/*******hovered part*********/
+.product__item-hovered {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  background-color: rgba(58, 58, 58, 0.72);
+  transition: all 0.5s;
 }
 
 .product__item.sales::before {
@@ -368,49 +361,7 @@ input:focus {
   content: "New";
   background-color: #2ec1ac;
 }
-.product__item-image {
-  width: 100%;
-  transition: all 2s;
-}
 
-.product__item-name {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #3a3a3a;
-}
-.product__item-text {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.product__item .sub-text {
-  font-size: 1.6rem;
-}
-
-.product__item-price {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10%;
-}
-.canceled-price.sub-text {
-  font-size: 1.6rem;
-  align-self: flex-end;
-  color: #b0b0b0;
-  text-decoration: line-through;
-}
-
-.product__item-hovered {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  gap: 3rem;
-  background-color: rgba(58, 58, 58, 0.72);
-  transition: all 0.5s;
-}
 .product__item:hover > .product__item-hovered {
   left: 0;
   right: 0;
@@ -459,6 +410,39 @@ input:focus {
   color: rgba(250, 234, 205, 0.9);
 }
 
+/*******regular part*********/
+
+.product__item-image {
+  width: 100%;
+  transition: all 2s;
+}
+
+.product__item-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.product__item-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.product__item .sub-text {
+  font-size: 1.6rem;
+}
+
+.product__item-price {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+.canceled-price.sub-text {
+  font-size: 1.6rem;
+  align-self: flex-end;
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
 .products_section-button--more.btn {
   background-color: #fff;
   border: 1px solid #e89f71;
@@ -471,4 +455,138 @@ input:focus {
   height: 100%;
   max-width: 25rem;
   max-height: 5rem;
+}
+
+/*******************************/
+/******* ROOMS SECTION *********/
+/*******************************/
+.rooms__section {
+  display: flex;
+  background-color: #fcf8f3;
+  width: 100%;
+  height: 66rem;
+  transition: all 0.4s;
+}
+
+.rooms__section-description {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 10rem;
+  padding-top: 18rem;
+  max-width: 40rem;
+}
+
+.rooms__section-header {
+}
+.rooms__section-description--button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 5rem;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/*********PHOTO SECTION*********/
+
+.rooms_photo-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+.photo__section-element {
+  position: absolute;
+  height: 59rem;
+  width: 40rem;
+  left: 10rem;
+  top: 4rem;
+}
+.photo__section-element--item {
+  height: 59rem;
+  width: 40rem;
+}
+.photo__section-element.item2 {
+  height: 48rem;
+  width: 37rem;
+  left: 52.4rem;
+  top: 4rem;
+}
+.photo__section-element.item3 {
+  left: 91.8rem;
+}
+.item2 > .photo__section-element--item,
+.item3 > .photo__section-element--item {
+  height: 48rem;
+  width: 37rem;
+}
+
+.rooms__indicator.indicator-container {
+  transform: translate(-10rem, 24rem);
+}
+.photo-desctription-container.rooms {
+  display: none;
+}
+.item1 .photo-desctription-container.rooms {
+  display: block;
+}
+.item1 .photo-desctription-container.rooms::after {
+  position: absolute;
+  bottom: 0;
+  right: -2.4rem;
+  content: "→";
+  color: #fff;
+  font-size: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  background-color: #e89f71;
+}
+.photo-desctription-container--name {
+  font-size: 1.6rem;
+  color: #616161;
+  font-weight: 500;
+}
+.photo-desctription-container--name.item1 {
+  display: block;
+}
+
+.tips__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips__section-header {
+  padding-top: 0.6rem;
+  padding-bottom: 2rem;
+}
+.tips__container {
+  display: flex;
+  align-items: center;
+}
+.slider__btn {
+  background-color: #fff;
+  padding: 1rem;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  z-index: 15;
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.slide {
+  background-color: #fff;
+}
+.slide.active {
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.1);
+}
+.testimonial > img {
+  height: 25rem;
+  width: 35rem;
 }

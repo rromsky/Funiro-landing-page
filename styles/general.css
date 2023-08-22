@@ -49,3 +49,32 @@ a:visited {
   line-height: 30px;
   font-weight: 600;
 }
+
+/*******INDICATORS*********/
+
+.indicator-container {
+  padding-bottom: 1rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+.indicator-item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+
+  background-color: #d8d8d8;
+}
+.indicator-item:hover {
+  cursor: pointer;
+}
+.indicator-item::after {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.indicator-item.active {
+  background-color: #e89f71;
+}
