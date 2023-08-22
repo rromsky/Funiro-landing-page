@@ -567,7 +567,7 @@ input:focus {
 }
 
 .tips__section-header {
-  padding-top: 0.6rem;
+  padding-top: 1.2rem;
   padding-bottom: 2rem;
 }
 .tips__container {
@@ -578,16 +578,20 @@ input:focus {
 /******************************/
 /********   SLIDER    *********/
 /******************************/
-
+.slider__container {
+  transition: all 0.3s;
+}
 .slider {
   position: relative;
-  height: 40rem;
+  height: 35rem;
   width: 120rem;
+  overflow-x: hidden;
 }
 .slider__btn {
   background-color: #fff;
   padding: 1rem;
   height: 4rem;
+  font-size: 2rem;
   width: 4rem;
   border: none;
   z-index: 15;
