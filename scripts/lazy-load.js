@@ -59,8 +59,3 @@ const lazyLoadImage = (target) => {
 };
 
 images.forEach(lazyLoadImage);
-
-const bac = document.querySelector(".photo-desctription-container");
-bac.addEventListener("hover", () => {
-  console.log("hovered");
-});
