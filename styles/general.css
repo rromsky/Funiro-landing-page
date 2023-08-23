@@ -93,7 +93,7 @@ a:visited {
   z-index: 2;
   height: 27px;
   width: 27px;
-  background-image: url(/active.png);
+  background-image: url(active.png);
   background-color: #e89f7100;
 }
 .indicator-item.active::before {
