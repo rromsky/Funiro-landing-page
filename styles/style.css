@@ -330,7 +330,9 @@ input:focus {
   gap: 3rem;
   transition: all 0.4s;
 }
-
+.room-ii {
+  position: relative;
+}
 /*******PRODUCTS ITEMS*********/
 
 .product__item {
