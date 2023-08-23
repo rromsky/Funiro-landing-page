@@ -222,9 +222,6 @@
   }
 }
 @media (max-width: 616px) {
-  body {
-    overflow-x: hidden;
-  }
   .main-nav-list {
     gap: 1rem;
   }

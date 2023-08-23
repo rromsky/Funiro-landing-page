@@ -17,6 +17,8 @@ body {
   color: #3a3a3a;
   background-color: #fff;
 
+  overflow-x: hidden;
+
   display: flex;
   flex-direction: column;
 }
