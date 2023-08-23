@@ -141,6 +141,13 @@
   .hero__photo-desctription {
     transform: translateX(-100%);
   }
+  .hero__text-container {
+    align-items: center;
+  }
+  .hero__description {
+    max-width: 36rem;
+    margin-left: 1rem;
+  }
 }
 @media (max-width: 1046px) {
   html {
@@ -242,7 +249,7 @@
   }
   .rooms__indicator {
     top: 40rem;
-    left: 37rem !important;
+    left: 32rem !important;
   }
   .rooms-btn {
     top: 64rem;
@@ -260,9 +267,6 @@
   .main-nav-list {
     gap: 0.6rem;
   }
-  .search__container {
-    width: 36rem;
-  }
   .colored-container {
     width: 67vw;
   }
@@ -278,6 +282,13 @@
 @media (max-width: 500px) {
   .products__container {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+  .hero__description {
+    padding: 5rem 1rem 1rem 0;
+  }
+  .photo__section-element {
+    left: 10rem;
+    left: 3vw;
   }
 }
 @media (max-width: 386px) {
