@@ -220,6 +220,10 @@
   .rooms__section-description {
     padding-top: 12rem;
   }
+  .product__item.lazy-hide {
+    position: absolute;
+    left: 0;
+  }
 }
 @media (max-width: 616px) {
   .main-nav-list {

@@ -109,3 +109,15 @@ heroPrevItem.addEventListener(`click`, () => {
     });
   }
 });
+
+//MOBILE NAVIGATION OPEN/CLOSE
+
+const mobileOpenBtn = element(".mobile-nav--open");
+const mobileCloseBtn = element(".mobile__menu-close--btn");
+const mobileNav = element(".mobile__menu");
+
+const swapNav = () => {
+  mobileNav.classList.toggle("ab-hide");
+};
+mobileOpenBtn.addEventListener(`click`, swapNav);
+mobileNav.addEventListener(`click`, swapNav);

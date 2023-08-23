@@ -43,7 +43,8 @@ a:visited {
   transition: 0.5s;
 }
 .lazy-hide.animation-left {
-  transform: translateX(-25rem);
+  transform: translateX(-35rem);
+  margin-left: -5rem;
 }
 .ab-hide {
   display: none !important;
@@ -61,7 +62,6 @@ a:visited {
   line-height: 30px;
   font-weight: 600;
 }
-
 /*******INDICATORS*********/
 
 .indicator-container {
@@ -99,8 +99,8 @@ a:visited {
 .indicator-item.active::before {
   position: absolute;
   display: flex;
-  left: 0.9rem;
-  top: 0.9rem;
+  left: 9px;
+  top: 9px;
   align-self: center;
   z-index: 15;
   width: 1rem;

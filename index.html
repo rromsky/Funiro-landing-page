@@ -87,10 +87,35 @@
         <button class="btn-mobile-nav mobile-nav--open">
           <ion-icon class="icon-mobile-nav" name="menu-outline" />
         </button>
-        <button class="btn-mobile-nav mobile-nav--close ab-hide">
-          <ion-icon class="icon-mobile-nav hide" name="close-outline" />
-        </button>
       </header>
+
+      <div class="mobile__menu ab-hide">
+        <div class="mobile__menu-close--container">
+          <button class="mobile__menu-close--btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="mobile__menu-container main-nav-link">
+            <a class="mobile__menu-link main-nav-link" href="#">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+            </a>
+            <a class="mobile__menu-link main-nav-link" href="#">
+              <img
+                src="assets/img/icons/personal-photo.png"
+                alt="Personal photo"
+                class="personal-photo"
+              />
+            </a>
+          </div>
+          <a href="#products__section" class="mobile__menu-link main-nav-link"
+            >Products</a
+          >
+          <a href="#rooms__section" class="mobile__menu-link main-nav-link"
+            >Rooms</a
+          >
+          <a href="#" class="mobile__menu-link main-nav-link"> Inspirations </a>
+        </div>
+      </div>
       <!-- HERO SECTION -->
       <div class="hero__section lazy-hide">
         <!-- HERO INDICATORS -->
@@ -710,7 +735,7 @@
               </div>
             </div>
             <!-- TIPS SLIDE 5 -->
-            <div class="slide">
+            <div class="slide" style="transform: translateX(420%)">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img1.png"
@@ -734,8 +759,8 @@
       </div>
       <div class="tips__indicator indicator-container">
         <div class="tips__indicator indicator-item id1"></div>
-        <div class="tips__indicator indicator-item id2"></div>
-        <div class="tips__indicator indicator-item id3 active"></div>
+        <div class="tips__indicator indicator-item id2 active"></div>
+        <div class="tips__indicator indicator-item id3"></div>
         <div class="tips__indicator indicator-item id4"></div>
         <div class="tips__indicator indicator-item id5"></div>
       </div>
