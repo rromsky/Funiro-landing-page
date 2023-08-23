@@ -1,7 +1,8 @@
 # Landing Page
-##https://rromsky.github.io/Test-Task/
 This project is a landing page that utilizes HTML, CSS, and JavaScript to create an engaging web experience. The page is designed to be adaptive, ensuring a seamless presentation across various devices and screen sizes. The development also includes animations, including scrolling effects, to enhance user interaction.
 
+##https://rromsky.github.io/Test-Task/
+- **Link:**
 ## Features
 
 - **HTML:** The project is built using HTML to structure the content and layout of the landing page.
