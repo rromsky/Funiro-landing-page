@@ -89,5 +89,23 @@ a:visited {
   height: 1.4rem;
 }
 .indicator-item.active {
+  position: relative;
+  z-index: 2;
+  height: 27px;
+  width: 27px;
+  background-image: url(/assets/img/icons/active.png);
+  background-color: #e89f7100;
+}
+.indicator-item.active::before {
+  position: absolute;
+  display: flex;
+  left: 0.9rem;
+  top: 0.9rem;
+  align-self: center;
+  z-index: 15;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  border-radius: 50%;
   background-color: #e89f71;
 }
