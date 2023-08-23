@@ -33,8 +33,5 @@ To use the landing page project:
 
 Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
