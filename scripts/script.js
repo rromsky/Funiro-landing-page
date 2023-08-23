@@ -182,11 +182,13 @@ const nextRoom = element(`.slider__btn.rooms-btn`);
 const rooms = [1, 2, 3];
 
 nextRoom.addEventListener(`click`, () => {
-  element(`.rooms__indicator.id${rooms[0]}`).classList.toggle(`active`);
+  console.log(rooms);
   rooms.push(rooms[0]);
   rooms.reverse();
   rooms.pop();
   rooms.reverse();
+  element(`.rooms__indicator.id${rooms[2]}`).classList.remove(`active`);
+  element(`.rooms__indicator.id${rooms[1]}`).classList.remove(`active`);
   element(`.rooms__indicator.id${rooms[0]}`).classList.toggle(`active`);
   for (let i = 1; i <= 3; i++) {
     element(`.photo__section-element.item--id-${rooms[i - 1]}`).classList.add(
