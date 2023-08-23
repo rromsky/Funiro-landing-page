@@ -123,10 +123,10 @@
           <button class="hero-btn slider__btn slider__btn--left">
             <ion-icon name="chevron-back-outline"></ion-icon>
           </button>
-          <div class="hero__indicator indicator-item active id1"></div>
-          <div class="hero__indicator indicator-item id2"></div>
-          <div class="hero__indicator indicator-item id3"></div>
-          <div class="hero__indicator indicator-item id4"></div>
+          <div idd="1" class="hero__indicator indicator-item active id1"></div>
+          <div idd="2" class="hero__indicator indicator-item id2"></div>
+          <div idd="3" class="hero__indicator indicator-item id3"></div>
+          <div idd="1" class="hero__indicator indicator-item id4"></div>
           <button class="hero-btn tips-btn slider__btn slider__btn--right">
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </button>
@@ -608,10 +608,10 @@
         </button>
         <!-- ROOMS INDICATOR  -->
         <div class="rooms__indicator indicator-container">
-          <div class="rooms__indicator indicator-item active"></div>
-          <div class="rooms__indicator indicator-item"></div>
-          <div class="rooms__indicator indicator-item"></div>
-          <div class="rooms__indicator indicator-item"></div>
+          <div class="rooms__indicator indicator-item id1 active"></div>
+          <div class="rooms__indicator indicator-item id2"></div>
+          <div class="rooms__indicator indicator-item id3"></div>
+          <div class="rooms__indicator indicator-item id4"></div>
         </div>
         <!-- ROOMS PHOTO ELEMENT 1-->
         <div class="photo__section-element item--id-1 item1">
@@ -660,7 +660,7 @@
     <!-- TIPS SECTION -->
     <div class="tips__section">
       <!-- TIPS HEADER -->
-      <h2 class="tips__section-header">Tpis & Tricks</h2>
+      <h2 class="tips__section-header">Tips & Tricks</h2>
       <div class="tips__container">
         <!-- TIPS SLIDER BUTTON LEFT -->
         <button class="tips-btn slider__btn slider__btn--left">
@@ -670,7 +670,7 @@
         <div class="slider__container lazy-hide">
           <div class="slider">
             <!-- TIPS SLIDE 1 -->
-            <div class="slide">
+            <div class="slide id1">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img1.png"
@@ -687,7 +687,7 @@
             </div>
 
             <!-- TIPS SLIDE 2 -->
-            <div class="slide active" style="transform: translateX(105%)">
+            <div class="slide active id2" style="transform: translateX(105%)">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img2.png"
@@ -704,7 +704,7 @@
             </div>
 
             <!-- TIPS SLIDE 3 -->
-            <div class="slide" style="transform: translateX(210%)">
+            <div class="slide id3" style="transform: translateX(210%)">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img3.png"
@@ -721,7 +721,7 @@
             </div>
 
             <!-- TIPS SLIDE 4 -->
-            <div class="slide" style="transform: translateX(315%)">
+            <div class="slide id4" style="transform: translateX(315%)">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img1.png"
@@ -735,7 +735,7 @@
               </div>
             </div>
             <!-- TIPS SLIDE 5 -->
-            <div class="slide" style="transform: translateX(420%)">
+            <div class="slide id5" style="transform: translateX(420%)">
               <div class="testimonial">
                 <img
                   data-lazy="assets/img/tips/img1.png"
@@ -753,7 +753,7 @@
           </div>
         </div>
         <!-- TIPS SLIDER BUTTON RIGHT -->
-        <button class="tips-btn slider__btn slider__btn--right">
+        <button id="pls" class="tips-btn slider__btn slider__btn--right">
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </button>
       </div>
